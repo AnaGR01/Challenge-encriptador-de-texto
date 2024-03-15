@@ -1,0 +1,239 @@
+.animation_section {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button_section {
+    display: flex;
+    gap: 30px;
+}
+
+body {
+    background-image: url(img/encriptar.jpg) !important;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+
+
+.button_encriptar {
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    color: white;
+    background-color: #0A3871;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button_desencriptar {
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    color: #0A3871;;
+    background-color: #D8DFE8;
+    outline: none;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4% 4px 20px 8%;
+    gap: 40px;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        margin-top: 152px;
+    }
+}
+
+.copiar_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    top: 20;
+    left: 5%;
+}
+
+.first_section {
+    width: 60%;
+    margin-top: 102px;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+.input_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.icon {
+    color: white;
+    border: 1px solid black;
+    background-color: #ff0000;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.p_section {
+    color: #f25fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    height: 623px;
+    font-size: 32px;
+    color: #d300fd;
+    outline: none;
+    border: none;
+    background-color: #172c7700;
+    resize: none;
+    overflow: auto;
+}
+
+.input::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.input::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
+
+.input::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+
+.message_section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 24px;
+    @media screen and (max-width: 700px) {
+        gap: 40px;
+    }
+}
+
+.message_text {
+    max-height: 61vh;
+    overflow-y: auto;
+    width: 100%;
+    word-break: break-word;
+    overflow: auto;
+}
+
+
+.message_text::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.message_text::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
+
+.message_text::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+
+
+.message_section > button {
+    height: 67px;
+    width: 336px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #d300fd;
+}
+
+.second_section {
+    border-radius: 36px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-shadow: 0px 5px 5px 5px #d300fd;
+    animation: sombraAnimacion 2s infinite;
+    color: #eb00eb;
+    background-color: rgba(255, 255, 255, 0);
+    
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        min-height: 400px;
+        padding: 2%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
+
+@keyframes sombraAnimacion {
+    0% {
+        box-shadow: 0px 5px 5px 5px #d300fd;
+    }
+    50% {
+        box-shadow: 0px 10px 10px 10px #d300fd;
+    }
+    100% {
+        box-shadow: 0px 5px 5px 5px #d300fd;
+    }
+}
+
+.not_found_message {
+    display: none;
+    /*display: flex;*/
+    flex-direction: column;
+    gap: 20px;
+}
+
+.not_found_message > h2 {
+    font-size: 24px;
+}
+
+.not_found_message > p {
+    font-size: 16px;
+}
